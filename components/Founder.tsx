@@ -36,10 +36,7 @@ export const Founder: React.FC = () => {
             </FadeIn>
             
             <FadeIn delay={0.4}>
-                <div className="mt-12 flex items-center gap-4 border-t border-stone-200 pt-8">
-                    <div className="w-12 h-12 bg-stone-200 rounded-full overflow-hidden grayscale contrast-125">
-                        <img src="https://picsum.photos/id/64/200/200" alt="Andy" className="w-full h-full object-cover" />
-                    </div>
+                <div className="mt-12 border-t border-stone-200 pt-8">
                     <div>
                         <div className="font-medium text-stone-900">Andy</div>
                         <div className="text-sm text-stone-400">Founder of Blurto</div>
