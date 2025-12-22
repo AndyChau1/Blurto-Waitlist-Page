@@ -34,9 +34,9 @@ export const EmailCapture: React.FC = () => {
                             transition={{ duration: 0.5 }}
                             className="text-center w-full"
                         >
-                            <p className="text-stone-300 font-serif italic text-xl md:text-2xl leading-relaxed">
-                                Thank you for joining the waitlist. <br className="hidden md:block"/>
-                                We’ll notify you when it’s time to resolve your thoughts.
+                            <p className="text-stone-300 font-serif italic text-lg md:text-xl leading-relaxed">
+                                Thank you for joining the waitlist! <br />
+                                We’ll notify you as soon as we release. If you know someone else who would be interested, please share this website with them.
                             </p>
                         </motion.div>
                     ) : (
