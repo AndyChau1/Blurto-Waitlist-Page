@@ -59,7 +59,7 @@ export const Hero: React.FC = () => {
         </FadeIn>
         
         {/* 2. Headline Formatting: Strict 2 lines max */}
-        <FadeIn delay={0.2}>
+        <FadeIn delay={0.1}>
             {/* Mobile: clamp font size to ensure 2 lines. Desktop: large text. */}
             <h1 className="text-[clamp(2rem,9vw,3.5rem)] md:text-7xl lg:text-8xl font-semibold tracking-tight text-stone-950 leading-[1.1] md:leading-[1.05]">
             Your ideas don’t need <br />
@@ -68,7 +68,7 @@ export const Hero: React.FC = () => {
         </FadeIn>
 
         {/* 3. Increased spacing before subheadline (The "Pause") - Staggered delay increased to 0.8s */}
-        <FadeIn delay={0.8}>
+        <FadeIn delay={0.2}>
             <div className="mt-10 md:mt-12 mb-10 text-3xl md:text-6xl lg:text-7xl px-2">
                 <span className="text-stone-400 font-serif italic">
                     They need <span className="text-orange-600 relative inline-block">resolution<span className="absolute bottom-1 md:bottom-2 left-0 w-full h-[0.1em] bg-orange-200/40 -z-10 skew-x-12"></span></span>.
@@ -76,14 +76,14 @@ export const Hero: React.FC = () => {
             </div>
         </FadeIn>
 
-        <FadeIn delay={1.0}>
+        <FadeIn delay={0.3}>
             <p className="text-lg md:text-2xl text-stone-500 max-w-4xl mx-auto mb-12 leading-relaxed font-light px-4">
             Blurto helps you capture a thought, decide what to do with it, and move on.
             </p>
         </FadeIn>
 
         {/* Hero Email Capture */}
-        <FadeIn delay={1.2}>
+        <FadeIn delay={0.4}>
              <div className="max-w-md mx-auto relative z-30 min-h-[100px] flex flex-col justify-center"> 
                 <AnimatePresence mode="wait">
                     {status === 'success' ? (
@@ -146,7 +146,7 @@ export const Hero: React.FC = () => {
             
             {/* Phone 1: CAPTURE */}
             <div className="relative group">
-                <PhoneMockup delay={1.4} className="origin-center md:origin-bottom scale-100 md:scale-95">
+                <PhoneMockup delay={0.6} className="origin-center md:origin-bottom scale-100 md:scale-95">
                     <div className="h-full flex flex-col bg-stone-950 font-sans text-white relative">
                         <div className="h-14 w-full"></div>
 
@@ -190,7 +190,7 @@ export const Hero: React.FC = () => {
 
             {/* Phone 2: RESOLVE (Animated Swipe) */}
             <div className="relative group z-20 md:-mb-12">
-                <PhoneMockup delay={1.4} className="origin-center md:origin-bottom scale-100">
+                <PhoneMockup delay={0.6} className="origin-center md:origin-bottom scale-100">
                     <div className="h-full flex flex-col bg-stone-950 font-sans relative text-white">
                         <div className="h-14 w-full"></div>
 
@@ -250,7 +250,7 @@ export const Hero: React.FC = () => {
 
             {/* Phone 3: CLARITY (Pulsing Glow) */}
             <div className="relative group z-10">
-                <PhoneMockup delay={1.4} className="origin-center md:origin-bottom scale-100 md:scale-95">
+                <PhoneMockup delay={0.6} className="origin-center md:origin-bottom scale-100 md:scale-95">
                     <div className="h-full flex flex-col bg-stone-950 font-sans relative">
                          <div className="h-14 w-full"></div>
 
